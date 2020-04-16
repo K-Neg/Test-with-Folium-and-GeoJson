@@ -29,6 +29,7 @@ mapa.save('laPointMap.html')
 
 #agrupa as loja pelo CEP (ZIP CODE)
 #groupby é um método do pandas
+
 numStoresSeries = df.groupby('zip').count().id
 #novo dataframe em branco
 numStoresByZip = pd.DataFrame()
